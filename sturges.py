@@ -40,9 +40,13 @@ def main():
     # Cálculo da média total
     mean_gmat = gmat.mean()
 
+    # Cálculo da variância global
+    global_variance = gmat.var()
+
     # Resultados
     print(f"Média do GMAT: {mean_gmat}")
-    print("\nFrequências das classes:")
+    print(f"Variância global do GMAT: {global_variance}\n")
+    print("Frequências das classes:")
     print(class_counts)
 
     # Visualização das frequências das classes com gráfico de barras
